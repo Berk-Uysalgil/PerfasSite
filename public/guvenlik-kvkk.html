@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <title>Güvenlik & KVKK | Perfas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo"><img src="images/perfas-logo.png" alt="Perfas Logo" /></a>
+
+    <nav>
+      <a href="index.html">Anasayfa</a>
+      <a href="hakkimizda.html">Hakkımızda</a>
+      <a href="iletisim.html">İletişim</a>
+    </nav>
+
+    <a href="iletisim.html" class="btn-primary">Satın Al</a>
+    
+    <button class="theme-toggle" id="themeToggle" aria-label="Tema Degistir">
+      <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+      </svg>
+      <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="dark">
+  <div class="container">
+    <h1>Güvenlik & KVKK</h1>
+    <p class="hero-sub">
+      Perfas, veri güvenliği ve gizliliğini en üst seviyede tutar.
+    </p>
+  </div>
+</section>
+
+<!-- CONTENT -->
+<section class="light">
+  <div class="container">
+    <h2 class="section-title">Güvenlik Merkezi</h2>
+    <p style="text-align: center; max-width: 800px; margin: 0 auto 48px; font-size: 18px;">
+      B2B satın alma kararlarında kritik olan güvenlik sorularının cevapları
+    </p>
+  </div>
+  
+  <div class="container security-grid">
+
+    <div class="security-card">
+      <h3>🔐 Veri Konumu ve Altyapı</h3>
+      <p>
+        <strong>Veri nerede tutuluyor?</strong> Türkiye'deki bulut sunucularda saklanır. Verileriniz yurt dışına çıkmaz.
+      </p>
+      <ul>
+        <li>✔ Türkiye lokasyonlu sunucular</li>
+        <li>✔ AES-256 şifreleme (veri at rest)</li>
+        <li>✔ TLS 1.3 şifreleme (veri aktarımı)</li>
+        <li>✔ ISO 27001 uyumlu veri merkezi</li>
+      </ul>
+    </div>
+
+    <div class="security-card">
+      <h3>💾 Yedekleme ve Felaket Kurtarma</h3>
+      <p>
+        <strong>Yedekleme var mı?</strong> Günlük otomatik yedekleme, 30 günlük geri dönüş imkanı.
+      </p>
+      <ul>
+        <li>✔ Günlük otomatik yedekleme</li>
+        <li>✔ 30 günlük geri dönüş (point-in-time recovery)</li>
+        <li>✔ Coğrafi olarak ayrı yedek lokasyonlar</li>
+        <li>✔ Felaket kurtarma planı (RTO: 4 saat, RPO: 24 saat)</li>
+      </ul>
+    </div>
+
+    <div class="security-card">
+      <h3>🔑 Yetkilendirme ve Erişim Kontrolü</h3>
+      <p>
+        <strong>Yetkilendirme nasıl?</strong> Rol bazlı erişim kontrolü (RBAC), audit log ile tüm işlemler kayıt altında.
+      </p>
+      <ul>
+        <li>✔ Rol bazlı yetkilendirme (Admin/Yönetici/İzleyici)</li>
+        <li>✔ Birim bazlı erişim kontrolü</li>
+        <li>✔ İki faktörlü kimlik doğrulama (2FA) desteği</li>
+        <li>✔ Tüm işlemlerin audit log kaydı</li>
+      </ul>
+    </div>
+
+    <div class="security-card">
+      <h3>📋 Loglama ve İzlenebilirlik</h3>
+      <p>
+        <strong>Loglama var mı?</strong> Tüm kullanıcı işlemleri, veri erişimleri ve sistem olayları loglanır.
+      </p>
+      <ul>
+        <li>✔ Kullanıcı işlem logları (kim, ne zaman, ne yaptı)</li>
+        <li>✔ Veri erişim logları</li>
+        <li>✔ Sistem olay logları</li>
+        <li>✔ 1 yıllık log saklama süresi</li>
+      </ul>
+    </div>
+
+    <div class="security-card">
+      <h3>🛡️ KVKK Uyumluluğu</h3>
+      <p>
+        <strong>KVKK uyumlu mu?</strong> 6698 sayılı KVKK'ya tam uyumlu, DPA (Veri İşleme Sözleşmesi) mevcut.
+      </p>
+      <ul>
+        <li>✔ Açık rıza yönetimi ve kayıt sistemi</li>
+        <li>✔ Veri minimizasyonu ilkesi (sadece gerekli veri toplanır)</li>
+        <li>✔ Talep üzerine veri silme/anonimleştirme</li>
+        <li>✔ DPA (Veri İşleme Sözleşmesi) imzalanabilir</li>
+        <li>✔ KVKK bilgilendirme metni ve aydınlatma yükümlülüğü</li>
+      </ul>
+    </div>
+
+    <div class="security-card">
+      <h3>📁 Veri Saklama ve Silme</h3>
+      <p>
+        <strong>Silme/taşıma talepleri nasıl?</strong> Talep üzerine 30 gün içinde veri silinir veya dışa aktarılır.
+      </p>
+      <ul>
+        <li>✔ Hizmet süresi boyunca saklama</li>
+        <li>✔ Talep üzerine 30 gün içinde silme</li>
+        <li>✔ Veri dışa aktarımı (JSON/CSV formatında)</li>
+        <li>✔ Anonimleştirme seçeneği</li>
+        <li>✔ Sözleşme sonlandığında otomatik silme</li>
+      </ul>
+    </div>
+
+    <div class="security-card">
+      <h3>🔒 Şifreleme ve Güvenlik Standartları</h3>
+      <p>
+        <strong>Güvenlik standartları neler?</strong> Endüstri standardı şifreleme ve güvenlik protokolleri kullanılır.
+      </p>
+      <ul>
+        <li>✔ AES-256 şifreleme (veri at rest)</li>
+        <li>✔ TLS 1.3 şifreleme (veri aktarımı)</li>
+        <li>✔ Güvenli parola politikaları</li>
+        <li>✔ Düzenli güvenlik denetimleri (yılda 2 kez)</li>
+        <li>✔ Penetrasyon testleri</li>
+      </ul>
+    </div>
+
+    <div class="security-card">
+      <h3>👤 Kullanıcı Hakları</h3>
+      <p>
+        <strong>Kullanıcılar verilerini kontrol edebilir mi?</strong> Evet, KVKK kapsamındaki tüm haklar kullanılabilir.
+      </p>
+      <ul>
+        <li>✔ Veri görüntüleme (kendi verilerini görme)</li>
+        <li>✔ Düzeltme talebi</li>
+        <li>✔ Silme hakkı</li>
+        <li>✔ İtiraz hakkı</li>
+        <li>✔ Veri taşınabilirliği (dışa aktarım)</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- DPA SECTION -->
+<section class="dark">
+  <div class="container" style="max-width: 900px;">
+    <h2 class="section-title light-text">Sözleşme ve DPA</h2>
+    <div style="background: rgba(255,255,255,0.05); padding: 40px; border-radius: 12px;">
+      <p style="font-size: 18px; line-height: 1.8; margin-bottom: 24px;">
+        Kurumsal müşterilerimiz için <strong>Veri İşleme Sözleşmesi (DPA)</strong> imzalanabilir. 
+        Sözleşme, veri işleme koşullarını, sorumlulukları ve güvenlik yükümlülüklerini net şekilde tanımlar.
+      </p>
+      <ul style="font-size: 16px; line-height: 2;">
+        <li>✔ Standart DPA şablonu mevcuttur</li>
+        <li>✔ Özelleştirilebilir maddeler</li>
+        <li>✔ Hukuki danışmanlık desteği</li>
+        <li>✔ KVKK uyumluluk garantisi</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="container">
+    <h2>Verilerin Güvende</h2>
+    <p>Perfas ile performans yönetimini güvenle yap.</p>
+    <a href="iletisim.html" class="btn-primary">İletişime Geç</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+
+    <div class="footer-brand">
+      <h3>Perfas</h3>
+      <p>Akıllı ekip performans yönetim platformu.</p>
+    </div>
+
+    <div>
+      <h4>Ürün</h4>
+      <a href="index.html">Anasayfa</a>
+      <a href="ozellikler.html">Özellikler</a>
+      <a href="nasil-calisir.html">Nasıl Çalışır?</a>
+      <a href="kullanim-senaryolari.html">Kullanım Senaryoları</a>
+      <a href="cozumler.html">Çözümler</a>
+    </div>
+
+    <div>
+      <h4>Destek</h4>
+      <a href="sss.html">SSS</a>
+      <a href="guvenlik-kvkk.html">Güvenlik & KVKK</a>
+      <a href="iletisim.html">İletişim</a>
+    </div>
+
+    <div>
+      <h4>Kurumsal</h4>
+      <a href="hakkimizda.html">Hakkımızda</a>
+    </div>
+
+  </div>
+
+  <p class="copyright">© 2026 Perfas. Tüm hakları saklıdır.</p>
+</footer>
+
+<script>
+  const themeToggle = document.getElementById('themeToggle');
+  const html = document.documentElement;
+  const savedTheme = localStorage.getItem('perfas-theme') || 'dark';
+  html.setAttribute('data-theme', savedTheme);
+  
+  themeToggle.addEventListener('click', () => {
+    const currentTheme = html.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', newTheme);
+    localStorage.setItem('perfas-theme', newTheme);
+  });
+</script>
+
+</body>
+</html>
