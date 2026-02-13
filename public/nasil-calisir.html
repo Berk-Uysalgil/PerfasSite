@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nasıl Çalışır? | Perfas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem('perfas-theme') || 'light';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="/" class="logo">
+        <img src="images/perfas-logo.png" alt="Perfas Logo" class="logo-img logo-dark" />
+        <img src="images/perfas-logo-light.svg" alt="Perfas Logo" class="logo-img logo-light" />
+      </a>
+
+      <nav>
+        <a href="/">Anasayfa</a>
+        <a href="/hakkimizda">Hakkımızda</a>
+        <a href="/iletisim">İletişim</a>
+      </nav>
+
+      <a href="/iletisim" class="btn-primary">Satın Al</a>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Tema Degistir">
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+        </svg>
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="dark">
+    <div class="container">
+      <h1>Perfas Nasıl Çalışır?</h1>
+      <p class="hero-sub">
+        İlk 5 dakikada ne yapacağınızı, hangi veriyi gireceğinizi ve çıktı olarak ne alacağınızı gösterelim.
+      </p>
+    </div>
+  </section>
+
+  <!-- STEPS -->
+  <section class="light">
+    <div class="container steps">
+
+      <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <h3>Agent'i Kur ve Çalışanları Tanımla</h3>
+          <p>
+            <strong>Ne yapıyorsunuz:</strong> Agent yazılımını çalışan bilgisayarlarına kuruyorsunuz (2 dakika). Web
+            panelinden kullanıcıları ekliyorsunuz.
+          </p>
+          <p>
+            <strong>Hangi veriyi giriyorsunuz:</strong> Kullanıcı adı, e-posta, birim/departman bilgisi, rol
+            (Admin/Yönetici/İzleyici).
+          </p>
+          <p>
+            <strong>Çıktı olarak ne alıyorsunuz:</strong> Sistem aktif, agent veri toplamaya başlıyor. Dashboard'da
+            kullanıcılar görünür.
+          </p>
+          <ul>
+            <li>✔ Agent kurulumu (Windows installer)</li>
+            <li>✔ Kullanıcı daveti (e-posta ile otomatik)</li>
+            <li>✔ Birim & departman yapısı</li>
+            <li>✔ Rol atamaları</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <h3>Kategorileri ve Keyword'leri Tanımla</h3>
+          <p>
+            <strong>Ne yapıyorsunuz:</strong> İş kategorilerini (örn: Yazılım Geliştirme, Muhasebe) ve bu kategorilere
+            ait keyword'leri (örn: visualstudio.exe, excel.exe) tanımlıyorsunuz.
+          </p>
+          <p>
+            <strong>Hangi veriyi giriyorsunuz:</strong> Kategori adı, tipi (İş/Diğer), keyword'ler (tam eşleşme veya
+            içeriyor), öncelik değeri.
+          </p>
+          <p>
+            <strong>Çıktı olarak ne alıyorsunuz:</strong> Sistem aktiviteleri otomatik olarak bu kategorilere atamaya
+            başlıyor. Dashboard'da "İş Oranı" metrikleri görünür hale geliyor.
+          </p>
+          <ul>
+            <li>✔ Kategori hiyerarşisi (Parent-Child yapısı)</li>
+            <li>✔ Keyword tanımlama (regex destekli)</li>
+            <li>✔ Öncelik yönetimi</li>
+            <li>✔ Otomatik tagleme kuralları</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <h3>Dashboard'da Performansı İzle</h3>
+          <p>
+            <strong>Ne yapıyorsunuz:</strong> Dashboard'u açıyorsunuz, filtrelerle (tarih, kullanıcı, birim) istediğiniz
+            veriyi görüntülüyorsunuz.
+          </p>
+          <p>
+            <strong>Hangi veriyi görüyorsunuz:</strong> Toplam aktif süre, İş/Diğer/Tanımsız dağılımı, kategori bazlı
+            zaman kullanımı, trend grafikleri, verimlilik oranları.
+          </p>
+          <p>
+            <strong>Çıktı olarak ne alıyorsunuz:</strong> Anlık performans durumu, haftalık/aylık trendler, birim
+            karşılaştırmaları, PDF/Excel raporları.
+          </p>
+          <ul>
+            <li>✔ Gerçek zamanlı dashboard (günlük güncelleme)</li>
+            <li>✔ Filtreleme (tarih, kullanıcı, birim, kategori)</li>
+            <li>✔ Trend analizi (haftalık/aylık karşılaştırma)</li>
+            <li>✔ Otomatik rapor gönderimi (e-posta ile)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">4</div>
+        <div class="step-content">
+          <h3>Rapor Oluştur ve Paylaş</h3>
+          <p>
+            <strong>Ne yapıyorsunuz:</strong> Raporlama ekranından filtrelerle özelleştirilmiş rapor oluşturuyorsunuz
+            veya otomatik rapor gönderimi ayarlıyorsunuz.
+          </p>
+          <p>
+            <strong>Hangi veriyi seçiyorsunuz:</strong> Rapor türü (Zaman Dağılımı, Kullanıcı Performansı, Birim Bazlı),
+            tarih aralığı, kullanıcı/birim filtresi, format (PDF/Excel).
+          </p>
+          <p>
+            <strong>Çıktı olarak ne alıyorsunuz:</strong> PDF veya Excel dosyası, e-posta ile otomatik gönderim,
+            yönetici özet raporları. Bu raporlarla performans değerlendirmeleri yapıp iyileştirme kararları alıyorsunuz.
+          </p>
+          <ul>
+            <li>✔ PDF/Excel dışa aktarım</li>
+            <li>✔ Otomatik e-posta raporları (haftalık/aylık)</li>
+            <li>✔ Yönetici özet raporları</li>
+            <li>✔ Tanımsız aktivite analizi</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXAMPLE SCENARIO -->
+  <section class="dark">
+    <div class="container">
+      <h2 class="section-title light-text">Örnek Senaryo: İlk Hafta</h2>
+      <div
+        style="max-width: 900px; margin: 0 auto; background: rgba(255,255,255,0.05); padding: 40px; border-radius: 12px;">
+        <div style="margin-bottom: 24px;">
+          <strong style="display: block; margin-bottom: 8px;">Gün 1-2: Kurulum</strong>
+          <p>Agent kurulumu tamamlandı, 50 çalışan sisteme eklendi. Temel kategoriler (Yazılım, Muhasebe, Eğlence) ve
+            keyword'ler tanımlandı.</p>
+        </div>
+        <div style="margin-bottom: 24px;">
+          <strong style="display: block; margin-bottom: 8px;">Gün 3-5: Veri Toplama</strong>
+          <p>Sistem aktiviteleri toplamaya başladı. Dashboard'da ilk veriler görünür hale geldi. Tanımsız aktiviteler
+            tespit edilmeye başlandı.</p>
+        </div>
+        <div>
+          <strong style="display: block; margin-bottom: 8px;">Gün 6-7: İyileştirme</strong>
+          <p>Tanımsız aktiviteler incelendi, eksik keyword'ler eklendi. Kategorizasyon oranı artırıldı. İlk haftalık
+            rapor yöneticilere gönderildi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+      <h2>Hemen Satın Al</h2>
+      <p>
+        Satın alım sonrası size özel kurulum rehberi ve KPI şablonu alacaksınız.
+      </p>
+      <a href="/iletisim" class="btn-primary">Satın Al</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <h3>Perfas</h3>
+        <p>Akıllı ekip performans yönetim platformu.</p>
+      </div>
+
+      <div>
+        <h4>Ürün</h4>
+        <a href="/">Anasayfa</a>
+        <a href="/ozellikler">Özellikler</a>
+        <a href="/nasil-calisir">Nasıl Çalışır?</a>
+        <a href="/kullanim-senaryolari">Kullanım Senaryoları</a>
+        <a href="/cozumler">Çözümler</a>
+      </div>
+
+      <div>
+        <h4>Destek</h4>
+        <a href="/sss">SSS</a>
+        <a href="/guvenlik-kvkk">Güvenlik & KVKK</a>
+        <a href="/iletisim">İletişim</a>
+      </div>
+
+      <div>
+        <h4>Kurumsal</h4>
+        <a href="/hakkimizda">Hakkımızda</a>
+      </div>
+
+    </div>
+
+    <p class="copyright">© 2026 Perfas. Tüm hakları saklıdır.</p>
+  </footer>
+
+  <script>
+    const themeToggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+    /* Theme initialized in head */
+
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('perfas-theme', newTheme);
+    });
+  </script>
+
+</body>
+
+</html>
