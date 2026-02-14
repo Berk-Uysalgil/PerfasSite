@@ -1419,7 +1419,54 @@ section {
 
   .nav-inner {
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* Removed flex-wrap: wrap to prevent dropping items */
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    /* Allow horizontal scroll if needed on very small screens */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE/Edge */
+  }
+
+  .nav-inner::-webkit-scrollbar {
+    display: none;
+    /* Chrome/Safari */
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-inner {
+    gap: var(--space-xs);
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
+  }
+
+  .logo img,
+  .logo-img {
+    height: 32px;
+  }
+
+  .navbar nav a {
+    font-size: 0.75rem;
+    padding: 6px 8px;
+  }
+
+  .navbar .btn-primary {
+    padding: 8px 16px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+
+  .theme-toggle {
+    width: 32px;
+    height: 32px;
+    margin-left: 4px;
+  }
+
+  .theme-toggle svg {
+    width: 16px;
+    height: 16px;
   }
 }
 
