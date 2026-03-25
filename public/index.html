@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfas | Akıllı Performans Platformu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem('perfas-theme') || 'light';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/perfas-logo.png" type="image/png" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="/" class="logo" style="gap: 8px;">
+        <img src="images/perfas-logo.png" alt="Perfas Logo" class="logo-img logo-dark" />
+        <img src="images/perfas-logo-light.svg" alt="Perfas Logo" class="logo-img logo-light" />
+        <span class="logo-text" style="font-size: 14px; font-weight: 600; color: var(--text-primary);">Performans Analiz Sistemi</span>
+      </a>
+
+      <nav>
+        <a href="/">Anasayfa</a>
+        <a href="/hakkimizda">Hakkımızda</a>
+        <a href="/iletisim">İletişim</a>
+      </nav>
+
+      <a href="/iletisim" class="btn-primary">Satın Al</a>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Tema Degistir">
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+        </svg>
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero dark">
+    <div class="container">
+      <h1>İş Performansınızı<br>Akıllı Hale Getirin</h1>
+      <div class="value-proposition"
+        style="background: var(--bg-card); padding: 24px; border-radius: 12px; margin: 24px 0; border: 1px solid var(--border);">
+        <p style="font-size: 20px; font-weight: 600; margin: 0 0 12px 0; color: var(--text-primary);">
+          İK ve Operasyon ekipleri için çalışan verimliliğini otomatik ölçen ve raporlayan performans analiz sistemi
+        </p>
+        <ul
+          style="list-style: none; padding: 0; margin: 0; font-size: 16px; line-height: 1.8; color: var(--text-secondary);">
+          <li>✓ Çalışanların dijital aktivitelerini arka planda otomatik toplar ve kategorize eder</li>
+          <li>✓ İş/Diğer/Tanımsız aktiviteleri objektif verilerle ayırır ve raporlar</li>
+          <li>✓ Mesai saatleri, verimlilik oranları ve trend analizleriyle yönetim kararlarını destekler</li>
+        </ul>
+      </div>
+      <p class="hero-sub">
+        KPI takibi, detaylı raporlama ve ekip performansını tek panelden yönetin.
+      </p>
+      <div class="hero-actions">
+        <a href="/iletisim" class="btn-primary">Satın Al</a>
+        <a href="/nasil-calisir" class="btn-secondary">Nasıl Çalışır?</a>
+      </div>
+      <div class="dashboard-preview">
+        <img src="images/dashboard-new.jpg"
+          alt="Perfas Performance Dashboard - Performans metrikleri ve analiz raporları" class="dashboard-img-dark" />
+        <img src="images/dashboard-light.png"
+          alt="Perfas Performance Dashboard - Performans metrikleri ve analiz raporları" class="dashboard-img-light" />
+      </div>
+    </div>
+  </section>
+
+  <!-- TARGET AUDIENCE -->
+  <section class="light">
+    <div class="container">
+      <h2 class="section-title">Kimler İçin?</h2>
+      <div class="features" style="max-width: 900px; margin: 0 auto;">
+        <div class="feature-card">
+          <h3>İnsan Kaynakları Yöneticileri</h3>
+          <p>Performans değerlendirmelerini objektif verilerle destekleyin. Çalışan verimliliğini ölçülebilir
+            metriklerle raporlayın ve adil değerlendirme süreçleri yürütün.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Operasyon Yöneticileri</h3>
+          <p>Ekip verimliliğini gerçek zamanlı takip edin. Zaman kaybına neden olan alışkanlıkları erken tespit edin ve
+            veriye dayalı iyileştirme kararları alın.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOT SUITABLE AUDIENCE -->
+  <section class="light">
+    <div class="container">
+      <h2 class="section-title">Kimler İçin Uygun Değil?</h2>
+      <div class="features" style="max-width: 900px; margin: 0 auto;">
+        <div class="feature-card">
+          <h3>Saha ve Tamamen Fiziksel İş Yapan Ekipler</h3>
+          <p>Perfas, bilgisayar ve dijital araçlar üzerinden veri toplar. Gününün büyük kısmını sahada, mağazada veya
+            üretim alanında geçiren ve bilgisayar kullanmayan ekipler için uygun değildir.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Mikro Yönetim ve Sürekli Takip Aracı Arayan Kurumlar</h3>
+          <p>Perfas, ekipleri "izleme" amacıyla değil, süreçleri veriye dayalı iyileştirmek için tasarlanmıştır.
+            Çalışanların her adımını bireysel olarak takip etmek ve baskı kurmak isteyen kurum kültürleri için
+            önerilmez.</p>
+        </div>
+        <div class="feature-card">
+          <h3>KVKK ve Gizlilik İlkelerine Uyum Sağlamak İstemeyenler</h3>
+          <p>Çalışan bilgilendirmesi, açık rıza ve KVKK uyum süreçlerini işletmek istemeyen kurumlar için Perfas uygun
+            değildir. Platform, şeffaf ve yasal çerçevede kullanılan ortamlarda değer üretir.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUE PROPOSITION DETAILS -->
+  <section class="dark">
+    <div class="container">
+      <h2 class="section-title light-text">Sistemin Sağladığı Değer</h2>
+      <div style="max-width: 1000px; margin: 0 auto;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+          <div style="background: rgba(255,255,255,0.05); padding: 32px; border-radius: 12px;">
+            <h3 style="margin-top: 0;">Objektif Ölçüm</h3>
+            <p style="line-height: 1.8;">
+              Çalışan performansı kişisel gözleme değil, otomatik toplanan verilere dayanır.
+              İş/Diğer/Tanımsız aktiviteler net şekilde ayrıştırılır.
+            </p>
+          </div>
+          <div style="background: rgba(255,255,255,0.05); padding: 32px; border-radius: 12px;">
+            <h3 style="margin-top: 0;">Otomatik Raporlama</h3>
+            <p style="line-height: 1.8;">
+              Manuel zaman kaydına gerek kalmaz. Sistem aktiviteleri otomatik toplar,
+              kategorize eder ve raporlara dönüştürür.
+            </p>
+          </div>
+          <div style="background: rgba(255,255,255,0.05); padding: 32px; border-radius: 12px;">
+            <h3 style="margin-top: 0;">Erken Tespit</h3>
+            <p style="line-height: 1.8;">
+              Zaman kaybına neden olan alışkanlıklar ve verimlilik düşüşleri
+              erken aşamada tespit edilir, proaktif aksiyon alınır.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="light">
+    <div class="container">
+      <h2 class="section-title">Neden Perfas?</h2>
+      <div class="features">
+        <div class="feature-card">
+          <h3>Otomatik Aktivite Takibi</h3>
+          <p><strong>Özellik:</strong> Arka planda çalışan agent, tüm dijital aktiviteleri otomatik toplar.</p>
+          <p><strong>Fayda:</strong> Manuel zaman kaydına gerek kalmaz, veriler objektif ve kesintisizdir.</p>
+          <p><strong>Sonuç:</strong> Ekip performans özetleri otomatik oluşturulur, yöneticiler dashboard'da anlık
+            durumu görür.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Akıllı Kategorizasyon</h3>
+          <p><strong>Özellik:</strong> Keyword kuralları ile aktiviteler İş/Diğer/Tanımsız kategorilerine otomatik
+            atanır.</p>
+          <p><strong>Fayda:</strong> Verimli ve verimsiz zaman kullanımı net şekilde ayrışır.</p>
+          <p><strong>Sonuç:</strong> Tanımsız aktiviteler tespit edilir, eksik keyword'ler eklenerek kategorizasyon
+            oranı artırılır.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Rol Bazlı Yetkilendirme + Audit Log</h3>
+          <p><strong>Özellik:</strong> Admin, yönetici, izleyici rolleri ve tüm işlemlerin log kaydı.</p>
+          <p><strong>Fayda:</strong> Veri güvenliği kontrol altında, KVKK uyumluluğu sağlanır.</p>
+          <p><strong>Sonuç:</strong> Güvenlik denetimlerinde izlenebilirlik sağlanır, yetkisiz erişim engellenir.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="dark">
+    <div class="container">
+      <h2 class="section-title light-text">Nasıl Çalışır?</h2>
+      <p style="text-align: center; font-size: 18px; margin-bottom: 40px; color: var(--text-secondary);">
+        İlk 5 dakikada ne yapacağınızı gösterelim
+      </p>
+      <div class="steps">
+        <div class="step">
+          <strong style="display: block; margin-bottom: 8px;">1. Kur</strong>
+          Agent'i çalışan bilgisayarlarına kurun (2 dakika)
+        </div>
+        <div class="step">
+          <strong style="display: block; margin-bottom: 8px;">2. Bağla</strong>
+          Kullanıcıları sisteme ekleyin, kategori ve keyword'leri tanımlayın (3 dakika)
+        </div>
+        <div class="step">
+          <strong style="display: block; margin-bottom: 8px;">3. Ölç</strong>
+          Sistem otomatik veri toplamaya başlar, dashboard'da anlık görünür
+        </div>
+        <div class="step">
+          <strong style="display: block; margin-bottom: 8px;">4. Paylaş</strong>
+          PDF/Excel raporları oluşturun veya otomatik e-posta gönderimi ayarlayın
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="/nasil-calisir" style="text-decoration: underline;">Detaylı kullanım senaryosu için tıklayın →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT HERO (from former ürün sayfası) -->
+  <section class="dark">
+    <div class="container">
+      <h2 class="section-title light-text">Perfas Ürün Genel Bakış</h2>
+      <p class="hero-sub">
+        Perfas, ekip performansını ölçmek, analiz etmek ve geliştirmek için tasarlanmış
+        uçtan uca bir performans yönetim platformudur.
+      </p>
+    </div>
+  </section>
+
+  <!-- PRODUCT INTRO (from former ürün sayfası) -->
+  <section class="light">
+    <div class="container">
+      <h2 class="section-title">Perfas Ne Yapar?</h2>
+      <p>
+        Perfas, çalışanların bilgisayar başında gerçekleştirdiği dijital aktiviteleri arka planda otomatik olarak
+        toplar,
+        önceden tanımlanmış keyword kuralları ile kategorize eder ve anlamlı raporlara dönüştürür.
+      </p>
+      <p style="margin-top:16px">
+        Sistem sayesinde çalışanların mesai süreleri objektif verilerle ölçülür, verimli (İş) ve verimsiz (Diğer)
+        aktiviteler
+        net şekilde ayrıştırılır, zaman kaybına neden olan alışkanlıklar erken aşamada tespit edilir ve yönetim
+        kararları
+        kişisel gözleme değil, ölçülebilir verilere dayanır.
+      </p>
+    </div>
+  </section>
+
+  <!-- PRODUCT FEATURES (from former ürün sayfası) -->
+  <section class="light">
+    <div class="container">
+      <h2 class="section-title">Temel Özellikler</h2>
+      <div class="features">
+        <div class="feature-card">
+          <h3>Otomatik Aktivite Toplama</h3>
+          <p>
+            Agent yazılımı çalışan bilgisayarlarında arka planda çalışır, tüm uygulama ve web sitesi kullanımlarını
+            otomatik olarak kaydeder.
+            CPU kullanımı %1'in altında, RAM kullanımı 50MB seviyesindedir.
+          </p>
+        </div>
+        <div class="feature-card">
+          <h3>Akıllı Kategorizasyon</h3>
+          <p>
+            Keyword kuralları ile aktiviteler İş/Diğer/Tanımsız kategorilerine otomatik atanır.
+            Öncelik sistemi ile çakışmalar çözülür. Tanımsız aktivite oranı %8'in altına düşer.
+          </p>
+        </div>
+        <div class="feature-card">
+          <h3>Dashboard ve Raporlama</h3>
+          <p>
+            Gerçek zamanlı dashboard'da toplam süre, İş/Diğer dağılımı, kategori bazlı analiz ve trend grafikleri
+            görüntülenir.
+            PDF/Excel formatında rapor dışa aktarımı ve otomatik e-posta gönderimi mevcuttur.
+          </p>
+        </div>
+        <div class="feature-card">
+          <h3>Rol Bazlı Yetkilendirme</h3>
+          <p>
+            Admin, Yönetici, İzleyici rolleri ile erişim kontrolü sağlanır. Birim bazlı filtreleme ile veri güvenliği
+            korunur.
+            Tüm işlemler audit log ile kayıt altına alınır.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT VALUE (from former ürün sayfası) -->
+  <section class="light">
+    <div class="container">
+      <h2 class="section-title">Sağladığı Faydalar</h2>
+      <div style="max-width:900px;margin:0 auto">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px;">
+          <div class="feature-card">
+            <strong style="display: block; margin-bottom: 8px;">Performans Süreçlerinde Şeffaflık</strong>
+            <p style="margin: 0; font-size: 14px;">Objektif verilerle değerlendirme, subjektiflikten kurtulma</p>
+          </div>
+          <div class="feature-card">
+            <strong style="display: block; margin-bottom: 8px;">Zaman Tasarrufu</strong>
+            <p style="margin: 0; font-size: 14px;">Otomatik veri toplama ve raporlama ile manuel süreçler azalır</p>
+          </div>
+          <div class="feature-card">
+            <strong style="display: block; margin-bottom: 8px;">Veriye Dayalı Kararlar</strong>
+            <p style="margin: 0; font-size: 14px;">Trend analizi ile erken müdahale, iyileştirme alanlarının tespiti</p>
+          </div>
+          <div class="feature-card">
+            <strong style="display: block; margin-bottom: 8px;">KVKK Uyumluluk</strong>
+            <p style="margin: 0; font-size: 14px;">6698 sayılı KVKK'ya tam uyum, DPA imzalanabilir</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+      <h2>Hemen Satın Al</h2>
+      <p style="font-size: 18px; margin-bottom: 24px;">
+        Satın alım sonrası size özel KPI şablonu ve kurulum rehberi alacaksınız
+      </p>
+      <div
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; max-width: 800px; margin: 32px auto; text-align: left;">
+        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 8px;">
+          <strong style="display: block; margin-bottom: 8px;">✓ Ne göreceksiniz?</strong>
+          <span style="font-size: 14px;">Canlı dashboard, rapor örnekleri, kategori yönetimi</span>
+        </div>
+        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 8px;">
+          <strong style="display: block; margin-bottom: 8px;">✓ Kimlerle görüşeceksiniz?</strong>
+          <span style="font-size: 14px;">Ürün uzmanı ve teknik destek ekibi</span>
+        </div>
+        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 8px;">
+          <strong style="display: block; margin-bottom: 8px;">✓ Ne kadar sürer?</strong>
+          <span style="font-size: 14px;">Hızlı kurulum ve hemen kullanım</span>
+        </div>
+      </div>
+      <a href="/iletisim" class="btn-primary" style="font-size: 18px; padding: 16px 32px;">Satın Al</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <h3>Perfas</h3>
+        <p>Akıllı ekip performans yönetim platformu.</p>
+      </div>
+
+      <div>
+        <h4>Ürün</h4>
+        <a href="/">Anasayfa</a>
+        <a href="/ozellikler">Özellikler</a>
+        <a href="/nasil-calisir">Nasıl Çalışır?</a>
+        <a href="/kullanim-senaryolari">Kullanım Senaryoları</a>
+        <a href="/cozumler">Çözümler</a>
+      </div>
+
+      <div>
+        <h4>Destek</h4>
+        <a href="/sss">SSS</a>
+        <a href="/guvenlik-kvkk">Güvenlik & KVKK</a>
+        <a href="/iletisim">İletişim</a>
+      </div>
+
+      <div>
+        <h4>Kurumsal</h4>
+        <a href="/hakkimizda">Hakkımızda</a>
+      </div>
+
+    </div>
+
+    <p class="copyright">© 2026 Perfas. Tüm hakları saklıdır.</p>
+  </footer>
+
+  <script>
+    // Theme toggle functionality
+    const themeToggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+
+    /* Theme initialization moved to head to prevent flash */
+
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('perfas-theme', newTheme);
+    });
+  </script>
+
+</body>
+
+</html>

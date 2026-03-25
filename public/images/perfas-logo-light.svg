@@ -1,0 +1,27 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Perfas Logo Light</title>
+  <desc id="desc">Hexagon outline with ascending bars representing performance</desc>
+  <defs>
+    <linearGradient id="perfasGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="50%" stop-color="#16a34a"/>
+      <stop offset="100%" stop-color="#15803d"/>
+    </linearGradient>
+  </defs>
+  <!-- Hexagon border -->
+  <polygon
+    points="60 6 104 33 104 87 60 114 16 87 16 33"
+    fill="none"
+    stroke="url(#perfasGreen)"
+    stroke-width="4"
+    stroke-linejoin="round"
+  />
+  <!-- Ascending bars -->
+  <g fill="url(#perfasGreen)">
+    <rect x="38" y="62" width="8" height="18" rx="2" />
+    <rect x="50" y="56" width="8" height="24" rx="2" />
+    <rect x="62" y="48" width="8" height="32" rx="2" />
+    <rect x="74" y="40" width="8" height="40" rx="2" />
+  </g>
+</svg>
+

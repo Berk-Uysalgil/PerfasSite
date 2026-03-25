@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Çözümler | Perfas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem('perfas-theme') || 'light';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/perfas-logo.png" type="image/png" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="/" class="logo">
+        <img src="images/perfas-logo.png" alt="Perfas Logo" class="logo-img logo-dark" />
+        <img src="images/perfas-logo-light.svg" alt="Perfas Logo" class="logo-img logo-light" />
+      </a>
+
+      <nav>
+        <a href="/">Anasayfa</a>
+        <a href="/hakkimizda">Hakkımızda</a>
+        <a href="/iletisim">İletişim</a>
+      </nav>
+
+      <a href="/iletisim" class="btn-primary">Satın Al</a>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Tema Degistir">
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+        </svg>
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="dark">
+    <div class="container">
+      <h1>Her Ekip İçin Doğru Çözüm</h1>
+      <p class="hero-sub">
+        Perfas, farklı sektör ve ekip yapılarına uyum sağlayan esnek bir
+        performans yönetim platformudur.
+      </p>
+    </div>
+  </section>
+
+  <!-- SOLUTIONS -->
+  <section class="light">
+    <div class="container solutions">
+
+      <!-- CORPORATE -->
+      <div class="solution-card">
+        <h2>Kurumsal Şirketler</h2>
+        <p>
+          Büyük organizasyonlarda performansın şeffaf ve ölçülebilir olması,
+          sürdürülebilir büyümenin temelidir. Perfas, departmanlar arası
+          hedef uyumunu ve yönetici görünürlüğünü artırır.
+        </p>
+        <ul>
+          <li>✔️ Departman bazlı KPI yönetimi</li>
+          <li>✔️ Yönetici dashboard’ları</li>
+          <li>✔️ Standartlaştırılmış raporlar</li>
+        </ul>
+      </div>
+
+      <!-- REMOTE -->
+      <div class="solution-card">
+        <h2>Uzaktan & Hibrit Ekipler</h2>
+        <p>
+          Dağınık ekiplerde performansı takip etmek zordur.
+          Perfas, uzaktan çalışan ekiplerde şeffaflık ve
+          hesap verebilirlik sağlar.
+        </p>
+        <ul>
+          <li>✔️ Bireysel hedef takibi</li>
+          <li>✔️ Gerçek zamanlı performans ölçümü</li>
+          <li>✔️ İlerleme görünürlüğü</li>
+        </ul>
+      </div>
+
+      <!-- HR -->
+      <div class="solution-card">
+        <h2>İnsan Kaynakları (İK)</h2>
+        <p>
+          İK ekipleri için objektif değerlendirme süreçleri kritik öneme sahiptir.
+          Perfas, performans değerlendirmelerini veriye dayalı hale getirir.
+        </p>
+        <ul>
+          <li>✔️ Adil ve ölçülebilir değerlendirme</li>
+          <li>✔️ Performans geçmişi</li>
+          <li>✔️ Yetkinlik bazlı analiz</li>
+        </ul>
+      </div>
+
+      <!-- MANAGEMENT -->
+      <div class="solution-card">
+        <h2>Yöneticiler</h2>
+        <p>
+          Yöneticiler için doğru kararlar, doğru verilerle alınır.
+          Perfas, yöneticilere net ve aksiyon alınabilir içgörüler sunar.
+        </p>
+        <ul>
+          <li>✔️ Kritik metrikler tek ekranda</li>
+          <li>✔️ Performans trend analizi</li>
+          <li>✔️ Hızlı aksiyon alma</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+      <h2>Ekibiniz İçin Doğru Çözümü Keşfedin</h2>
+      <p>Perfas’ın ekip yapınıza nasıl uyum sağladığını görmek için bizimle iletişime geçin.</p>
+      <a href="/iletisim" class="btn-primary">Satın Al</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <h3>Perfas</h3>
+        <p>Akıllı ekip performans yönetim platformu.</p>
+      </div>
+
+      <div>
+        <h4>Ürün</h4>
+        <a href="/">Anasayfa</a>
+        <a href="/ozellikler">Özellikler</a>
+        <a href="/nasil-calisir">Nasıl Çalışır?</a>
+        <a href="/kullanim-senaryolari">Kullanım Senaryoları</a>
+        <a href="/cozumler">Çözümler</a>
+      </div>
+
+      <div>
+        <h4>Destek</h4>
+        <a href="/sss">SSS</a>
+        <a href="/guvenlik-kvkk">Güvenlik & KVKK</a>
+        <a href="/iletisim">İletişim</a>
+      </div>
+
+      <div>
+        <h4>Kurumsal</h4>
+        <a href="/hakkimizda">Hakkımızda</a>
+      </div>
+
+    </div>
+
+    <p class="copyright">© 2026 Perfas. Tüm hakları saklıdır.</p>
+  </footer>
+
+  <script>
+    const themeToggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+    /* Theme initialized in head */
+
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('perfas-theme', newTheme);
+    });
+  </script>
+
+</body>
+
+</html>
